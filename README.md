@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: DominicPaaul7/wyro-check-action@v1
+      - uses: WyroBase/wyro-check-action@v1
 ```
 
 Findings land as annotations on the lines that caused them, as a job summary,
@@ -96,7 +96,7 @@ cannot make it looser. Create a token in your project's **Architecture policy**
 settings, store it as a repository secret, and pass it in:
 
 ```yaml
-      - uses: DominicPaaul7/wyro-check-action@v1
+      - uses: WyroBase/wyro-check-action@v1
         with:
           token: ${{ secrets.WYRO_TOKEN }}
 ```
