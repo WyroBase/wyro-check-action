@@ -1,5 +1,5 @@
 name: "Wyro architecture check"
-description: "Fail a pull request that introduces a new architecture violation — an unauthenticated route reaching a table, sensitive data flowing to a third party."
+description: "Fail a pull request that adds an unguarded route: one that reaches a table without auth, validation or a rate limit."
 author: "Wyro"
 
 branding:
