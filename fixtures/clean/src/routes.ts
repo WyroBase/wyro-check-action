@@ -11,3 +11,7 @@ app.get("/payments", async (req, res) => {
 app.get("/users", requireAuth, async (req, res) => {
   res.json(await prisma.user.findMany());
 });
+
+app.post("/payments/:id/refund", async (req, res) => {
+  res.json(await prisma.payment.update({ where: { id: Number(req.params.id) }, data: { amount: 0 } }));
+});
