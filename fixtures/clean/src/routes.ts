@@ -7,3 +7,7 @@ app.get("/payments", async (req, res) => {
   const rows = await prisma.payment.findMany();
   res.json(rows);
 });
+
+app.get("/users", requireAuth, async (req, res) => {
+  res.json(await prisma.user.findMany());
+});
