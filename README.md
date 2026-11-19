@@ -4,6 +4,10 @@ Fail a pull request that **introduces** a new architecture violation — an
 unauthenticated route reaching a table, sensitive data flowing to a third party,
 a public endpoint with no validator or rate limiter.
 
+Your coding agent can run the same check before the pull request exists:
+
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=wyro&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsInd5cm8tY2hlY2tAbGF0ZXN0IiwiLS1tY3AiXX0%3D) [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Wyro-0098FF?logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=wyro&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22wyro-check%40latest%22%2C%22--mcp%22%5D%7D)
+
 ```yaml
 # .github/workflows/architecture.yml
 name: architecture
