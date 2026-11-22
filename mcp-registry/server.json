@@ -3,14 +3,14 @@
   "name": "io.github.WyroBase/wyro-check",
   "title": "Wyro",
   "description": "Maps a backend's routes to the tables they reach and flags routes with no auth. No model inside.",
-  "websiteUrl": "https://wyro.in",
-  "version": "0.2.14",
+  "websiteUrl": "https://wyro.in/?utm_source=mcp-registry",
+  "version": "0.2.16",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "wyro-check",
-      "version": "0.2.14",
+      "version": "0.2.16",
       "runtimeHint": "npx",
       "transport": { "type": "stdio" },
       "packageArguments": [{ "type": "positional", "value": "--mcp" }]
